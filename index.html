@@ -1,40 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Penny Flip Game</title>
-    <link rel="stylesheet" href="./assets/css/style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
     <main>
-        <H1>Penny Flip Game</H1>
-        <div>
-            <div>Penny Image Display, Button Controls, and Status Message</div>
-            <hr>
-            <div>
-                <h2>Scoreboard</h2>
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Number of Heads</th>
-                            <th>Percentage Heads</th>
-                            <th>Number of Tails</th>
-                            <th>Percentage Tails</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td id="heads">0</td>
-                            <td id="heads-percent">0%</td>
-                            <td id="tails">0</td>
-                            <td id="tails-percent">0%</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
+      <h1>Penny Flip Game</h1>
+      <div>
+        <img
+          class="penny-pic"
+          src="./assets/images/penny-heads.jpg"
+          alt="Penny on Heads"
+          display="none"
+        />
+        <div class="buttons">
+          <button class="flip-btn">Flip</button>
+          <button class="clear-btn">Clear board</button>
         </div>
+        <h2 class="you-flipped" display="none">You flipped: Nothing =((</h2>
+        <hr />
+        <div>
+          <h2>Scoreboard</h2>
+          <table>
+            <thead>
+              <tr>
+                <th class="heads-num">Number of Heads</th>
+                <th class="heads-perc">Percentage Heads</th>
+                <th class="tails-num">Number of Tails</th>
+                <th class="tails-perc">Percentage Tails</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="totals" id="heads" display="none">0</td>
+                <td class="totals" id="heads-percent" display="none">0%</td>
+                <td class="totals" id="tails" display="none">0</td>
+                <td class="totals" id="tails-percent" display="none">0%</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
     </main>
     <script src="assets/js/script.js"></script>
-</body>
+  </body>
 </html>
