@@ -16,16 +16,16 @@
           alt="Penny on Heads"
           display="none"
         />
-        <div class="buttons">
+        <div class="coin-btns">
           <button class="flip-btn">Flip</button>
           <button class="clear-btn">Clear board</button>
         </div>
         <h2 class="you-flipped" display="none">You flipped: Nothing =((</h2>
         <hr />
         <div>
-          <h2>Scoreboard</h2>
-          <table>
-            <thead>
+          <h2 class="penny-score">Scoreboard</h2>
+          <table class="coin">
+            <thead class="coin">
               <tr>
                 <th class="heads-num">Number of Heads</th>
                 <th class="heads-perc">Percentage Heads</th>
@@ -42,6 +42,61 @@
               </tr>
             </tbody>
           </table>
+        </div>
+      </div>
+      <hr />
+      <div class="die-game">
+        <h1>Dice Roll Game</h1>
+        <div>
+          <img
+            class="die-pic"
+            src="./assets/images/dice/dice1.png"
+            alt="Single die on one"
+            display="none"
+          />
+          <div class="dice-btn">
+            <button class="roll-btn">Roll</button>
+            <button class="cl-dice-btn">Clear Board</button>
+          </div>
+          <h2 class="you-rolled" display="none">Click the "Roll" button =)</h2>
+          <hr />
+          <div>
+            <h2 class="dice-score">Scoreboard</h2>
+            <table>
+              <thead class="dice">
+                <tr>
+                  <th class="one-num" id="rolled">1 Rld</th>
+                  <th class="one-perc" id="perc">1 Perc</th>
+                  <th class="two-num" id="rolled">2 Rld</th>
+                  <th class="two-perc" id="perc">2 Perc</th>
+                  <th class="three-num" id="rolled">3 Rld</th>
+                  <th class="three-perc" id="perc">3 Perc</th>
+                  <th class="four-num" id="rolled">4 Rld</th>
+                  <th class="four-perc" id="perc">4 Perc</th>
+                  <th class="five-num" id="rolled">5 Rld</th>
+                  <th class="five-perc" id="perc">5 Perc</th>
+                  <th class="six-num" id="rolled">6 Rld</th>
+                  <th class="six-perc" id="perc">6 Perc</th>
+                </tr>
+              </thead>
+              <tbody class="dice">
+                <tr>
+                  <td class="totals" id="one" display="none">0</td>
+                  <td class="totals" id="one-percent" display="none">0%</td>
+                  <td class="totals" id="two" display="none">0</td>
+                  <td class="totals" id="two-percent" display="none">0%</td>
+                  <td class="totals" id="three" display="none">0</td>
+                  <td class="totals" id="three-percent" display="none">0%</td>
+                  <td class="totals" id="four" display="none">0</td>
+                  <td class="totals" id="four-percent" display="none">0%</td>
+                  <td class="totals" id="five" display="none">0</td>
+                  <td class="totals" id="five-percent" display="none">0%</td>
+                  <td class="totals" id="six" display="none">0</td>
+                  <td class="totals" id="six-percent" display="none">0%</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </div>
       </div>
     </main>
